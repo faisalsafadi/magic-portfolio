@@ -14,13 +14,12 @@ import {
 import { home, person, social } from "./content";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "https://magic-portfolio-gamma-six.vercel.app/";
+const baseURL: string = "https://meriem-boualam.com/";
 
 const routes: RoutesConfig = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,
   "/gallery": true,
 };
 
@@ -194,6 +193,8 @@ const schema: SchemaConfig = {
   name: person.name,
   description: home.description,
   email: person.email,
+  jobTitle: "Creative Director & Visual Artist",
+  worksFor: "Visual Storytelling Studio",
 };
 
 // social links — derived from the social array in content.tsx to avoid duplication

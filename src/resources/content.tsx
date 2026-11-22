@@ -2,21 +2,21 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Meriem",
+  lastName: "Boualam",
+  name: `Meriem Boualam`,
+  role: "Creative Director & Visual Artist",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "contact@meriem-boualam.com",
+  location: "Marrakesh/Morocco", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "French", "Arabic"], // optional: Leave the array empty if you don't want to display languages
   locale: "en", // BCP 47 language tag for the HTML lang attribute, e.g., 'en', 'ja', 'zh-TW'
 };
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  title: <>Subscribe to {person.firstName}'s Creative Insights</>,
+  description: <>Weekly updates on photography, video production and creative projects</>,
 };
 
 const social: Social = [
@@ -26,25 +26,25 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
-    essential: true,
+    link: "https://github.com/meriem-boualam",
+    essential: false,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/meriem-boualam-creative-director/",
     essential: true,
   },
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
+    link: "https://www.instagram.com/meriemboualam_creative/",
     essential: false,
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.threads.net/@meriemboualam_creative",
     essential: true,
   },
   {
@@ -59,29 +59,26 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  title: `Meriem Boualam - Creative Director & Visual Artist`,
+  description: `Portfolio showcasing photography, video production, advertising campaigns and visual content creation by Meriem Boualam`,
+  headline: <>Creative storytelling through visual arts</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Featured Work</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Recent Projects
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/creative-portfolio-showcasing-photography-video-advertising",
   },
   subline: (
     <>
-      I'm {person.firstName}, a {person.role.toLowerCase()} at{" "}
-      <Text as="span" size="xl" weight="strong">
-        ONCE UI
-      </Text>
-      , where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+      I'm Meriem Boualam, a creative director and visual artist based in Marrakesh. 
+      Specializing in photography, video production, advertising campaigns and visual content creation.
     </>
   ),
 };
@@ -107,53 +104,39 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        {person.firstName} is a {person.location.split("/")[1]?.replace("_", " ")}-based{" "}
-        {person.role.toLowerCase()} with a passion for transforming complex challenges into simple,
-        elegant design solutions. Their work spans digital interfaces, interactive experiences, and
-        the convergence of design and technology.
+        {person.firstName} is a Marrakesh-based creative director and visual artist with expertise in 
+        photography, video production, advertising campaigns and visual content creation. With over 10 years of experience in the industry, she specializes in telling compelling stories through visual media.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Visual Storytelling Studio",
+        timeframe: "2020 - Present",
+        role: "Creative Director & Photographer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Led photography and video production for international advertising campaigns, resulting in a 40% increase in brand engagement.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Managed end-to-end creative process for luxury fashion brands and lifestyle publications.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Marrakesh Media House",
+        timeframe: "2015 - 2020",
+        role: "Senior Video Producer & Editor",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Produced award-winning documentary series for cultural festivals and heritage events.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Directed and edited commercials for regional brands, achieving a 30% boost in campaign effectiveness.
           </>,
         ],
         images: [],
@@ -161,74 +144,79 @@ const about: About = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Institute of Visual Arts - Marrakesh",
+        description: <>Specialized in Photography and Visual Storytelling</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "International Film School - Casablanca",
+        description: <>Advanced Certificate in Video Production & Direction</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Expertise Areas",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Photography",
+        description: <>Documentary, Fashion, Portrait and Event Photography with a focus on storytelling.</>,
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Photography",
+            icon: "camera",
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Lighting",
+            icon: "lightbulb",
+          },
+          {
+            name: "Composition",
+            icon: "grid",
           },
         ],
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Video Production",
+        description: <>Full production cycle including direction, editing and post-production for commercials, documentaries and events.</>,
         tags: [
           {
-            name: "JavaScript",
-            icon: "javascript",
+            name: "Editing",
+            icon: "edit",
           },
           {
-            name: "Next.js",
-            icon: "nextjs",
+            name: "Direction",
+            icon: "film",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "Post-Production",
+            icon: "settings",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
+        images: [],
+      },
+      {
+        title: "Advertising Campaigns",
+        description: <>Concept development, creative direction and visual content creation for brand campaigns.</>,
+        tags: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Branding",
+            icon: "brand",
+          },
+          {
+            name: "Creative Direction",
+            icon: "lightbulb",
+          },
+          {
+            name: "Campaign Strategy",
+            icon: "chart",
           },
         ],
+        images: [],
       },
     ],
   },
@@ -247,7 +235,7 @@ const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  description: `Photography, video production and advertising campaigns by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
@@ -256,48 +244,48 @@ const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
+  description: `A collection of photography, video stills and creative visuals by ${person.name}`,
   // Images by https://lorant.one
   // These are placeholder images, replace with your own
   images: [
     {
       src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
+      alt: "Photography portfolio",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
+      alt: "Video production work",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
+      alt: "Advertising campaign visuals",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
+      alt: "Creative storytelling",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
+      alt: "Portrait photography",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
+      alt: "Event coverage",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
+      alt: "Fashion photography",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
+      alt: "Documentary visuals",
       orientation: "vertical",
     },
   ],

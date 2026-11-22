@@ -8,7 +8,7 @@ const person: Person = {
   role: "Creative Director & Visual Artist",
   avatar: "/images/avatar.jpg",
   email: "contact@meriem-boualam.com",
-  location: "Marrakesh/Morocco", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  location: "Africa/Casablanca", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "French", "Arabic"], // optional: Leave the array empty if you don't want to display languages
   locale: "en", // BCP 47 language tag for the HTML lang attribute, e.g., 'en', 'ja', 'zh-TW'
 };
@@ -167,11 +167,11 @@ const about: About = {
         tags: [
           {
             name: "Photography",
-            icon: "camera",
+            icon: "gallery",
           },
           {
             name: "Lighting",
-            icon: "lightbulb",
+            icon: "eye",
           },
           {
             name: "Composition",
@@ -186,15 +186,15 @@ const about: About = {
         tags: [
           {
             name: "Editing",
-            icon: "edit",
+            icon: "book",
           },
           {
             name: "Direction",
-            icon: "film",
+            icon: "eye",
           },
           {
             name: "Post-Production",
-            icon: "settings",
+            icon: "grid",
           },
         ],
         images: [],
@@ -205,15 +205,15 @@ const about: About = {
         tags: [
           {
             name: "Branding",
-            icon: "brand",
+            icon: "person",
           },
           {
             name: "Creative Direction",
-            icon: "lightbulb",
+            icon: "globe",
           },
           {
             name: "Campaign Strategy",
-            icon: "chart",
+            icon: "arrowUpRight",
           },
         ],
         images: [],

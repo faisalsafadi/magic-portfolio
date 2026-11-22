@@ -193,8 +193,8 @@ const schema: SchemaConfig = {
   name: person.name,
   description: home.description,
   email: person.email,
-  jobTitle: "Creative Director & Visual Artist",
-  worksFor: "Visual Storytelling Studio",
+ // jobTitle: "Creative Director & Visual Artist",
+ // worksFor: "Visual Storytelling Studio",
 };
 
 // social links — derived from the social array in content.tsx to avoid duplication
